@@ -1,0 +1,32 @@
+{
+  "dsName": "Login",
+  "fieldList": [
+    {
+      "fieldName": "email",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "rafi@gmail.com"
+      ]
+    },
+    {
+      "fieldName": "password",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "12345678"
+      ]
+    }
+  ],
+  "overallStrength": "pairWise",
+  "dataRows": [
+    {
+      "selected": true,
+      "$$hashKey": "object:28",
+      "email": "rafi@gmail.com",
+      "password": "12345678"
+    }
+  ]
+}

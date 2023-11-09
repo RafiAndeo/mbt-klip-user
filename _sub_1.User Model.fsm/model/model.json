@@ -1,0 +1,1685 @@
+{
+  "uid": "U100",
+  "typeCode": "scxml",
+  "desc": "Cloned from templateBasic model",
+  "notepad": "",
+  "childrenStates": [
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "Uce91cf4b",
+      "notepad": "",
+      "stateID": "End",
+      "isFinal": true,
+      "isInitial": false,
+      "nodeType": "FINAL",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [],
+      "position": {
+        "left": 2166.8,
+        "top": 572.0,
+        "width": 75.0,
+        "height": 50.0,
+        "nameOffset": 10.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "U7118ea47",
+      "notepad": "",
+      "stateID": "Start",
+      "isFinal": false,
+      "isInitial": true,
+      "nodeType": "INITIAL",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "Ud52672b9",
+          "notepad": "",
+          "targetUID": "U1debba7b",
+          "event": "e_Access_Home_Page_1.0",
+          "weight": 10,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 111.0,
+                "top": 478.0
+              },
+              {
+                "left": 211.0,
+                "top": 478.0
+              },
+              {
+                "left": 211.0,
+                "top": 478.0
+              },
+              {
+                "left": 311.0,
+                "top": 478.0
+              }
+            ],
+            "label": {
+              "left": 7,
+              "top": -23,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 38.0,
+        "top": 452.0,
+        "width": 75.0,
+        "height": 50.0,
+        "nameOffset": 15.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "Ud6fc7e0a",
+      "notepad": "",
+      "stateID": "v_Cart_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U1a892b95",
+          "notepad": "",
+          "targetUID": "Ua3ba1054",
+          "event": "e_Access_Main_Dashboard_Page_0.1",
+          "weight": 1,
+          "traverseTimes": 1,
+          "dataset": "Login",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "up",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 493.4,
+                "top": 1104.0
+              },
+              {
+                "left": 493.4,
+                "top": 462.0
+              },
+              {
+                "left": 1158.0,
+                "top": 462.0
+              }
+            ],
+            "label": {
+              "left": 6,
+              "top": -30,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "Uc6b9ab89",
+          "notepad": "",
+          "targetUID": "U3874eb3d",
+          "event": "e_Access_Success_Checkout_Page_0.6",
+          "weight": 6,
+          "traverseTimes": 1,
+          "dataset": "Transaction",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 519.0,
+                "top": 1142.0
+              },
+              {
+                "left": 655.0,
+                "top": 1142.0
+              },
+              {
+                "left": 655.0,
+                "top": 1142.0
+              },
+              {
+                "left": 791.0,
+                "top": 1142.0
+              }
+            ],
+            "label": {
+              "left": -18,
+              "top": 36,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "$VAR.HasAddProduct \u003d\u003d true",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U121df579",
+          "notepad": "",
+          "targetUID": "U1debba7b",
+          "event": "e_Return_Home_Page_0.3",
+          "weight": 3,
+          "traverseTimes": 1,
+          "dataset": "Login",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "down",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 442.4,
+                "top": 1179.0
+              },
+              {
+                "left": 442.4,
+                "top": 1204.0
+              },
+              {
+                "left": 285.0,
+                "top": 1204.0
+              },
+              {
+                "left": 285.0,
+                "top": 492.0
+              },
+              {
+                "left": 310.0,
+                "top": 492.0
+              }
+            ],
+            "label": {
+              "left": -155,
+              "top": 34,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 421.0,
+        "top": 1105.0,
+        "width": 100.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "U2c326185",
+      "notepad": "",
+      "stateID": "v_Dashboard_My_Transaction_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U7ff77694",
+          "notepad": "",
+          "targetUID": "U4741d6a6",
+          "event": "e_Access_Show_My_Transaction_Page_0.5",
+          "weight": 5,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 1361.0,
+                "top": 914.0
+              },
+              {
+                "left": 1542.0,
+                "top": 914.0
+              },
+              {
+                "left": 1542.0,
+                "top": 914.0
+              },
+              {
+                "left": 1723.0,
+                "top": 914.0
+              }
+            ],
+            "label": {
+              "left": 6,
+              "top": -27,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "$VAR.HasTransaction \u003d\u003d true || $VAR.HasLogin \u003d\u003d true",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U1c0f9d55",
+          "notepad": "",
+          "targetUID": "Uce91cf4b",
+          "event": "e_End_0.3",
+          "weight": 3,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "down",
+            "endDir": "down",
+            "posList": [
+              {
+                "left": 1245.8,
+                "top": 953.0
+              },
+              {
+                "left": 1245.8,
+                "top": 978.0
+              },
+              {
+                "left": 2206.8,
+                "top": 978.0
+              },
+              {
+                "left": 2206.8,
+                "top": 621.0
+              }
+            ],
+            "label": {
+              "left": 4,
+              "top": 29,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U4c67f25b",
+          "notepad": "",
+          "targetUID": "Ua3ba1054",
+          "event": "e_Return_Main_Dashboard_Page_0.2",
+          "weight": 2,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "left",
+            "endDir": "down",
+            "posList": [
+              {
+                "left": 1127.0,
+                "top": 914.0
+              },
+              {
+                "left": 1102.0,
+                "top": 914.0
+              },
+              {
+                "left": 1102.0,
+                "top": 504.0
+              },
+              {
+                "left": 1180.0,
+                "top": 504.0
+              },
+              {
+                "left": 1180.0,
+                "top": 479.0
+              }
+            ],
+            "label": {
+              "left": -120,
+              "top": -64,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 1129.0,
+        "top": 879.0,
+        "width": 234.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "U1debba7b",
+      "notepad": "",
+      "stateID": "v_Home_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U5225dcb2",
+          "notepad": "",
+          "targetUID": "Ud6fc7e0a",
+          "event": "e_Access_Cart_Page_0.1",
+          "weight": 1,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "down",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 325.0,
+                "top": 514.0
+              },
+              {
+                "left": 325.0,
+                "top": 1146.0
+              },
+              {
+                "left": 419.0,
+                "top": 1146.0
+              }
+            ],
+            "label": {
+              "left": -131,
+              "top": 12,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U89c0b66d",
+          "notepad": "",
+          "targetUID": "U9e436fe5",
+          "event": "e_Access_Login_Page_0.3",
+          "weight": 3,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "up",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 326.4,
+                "top": 439.0
+              },
+              {
+                "left": 326.4,
+                "top": 206.0
+              },
+              {
+                "left": 672.4,
+                "top": 206.0
+              },
+              {
+                "left": 672.4,
+                "top": 231.0
+              }
+            ],
+            "label": {
+              "left": 7,
+              "top": -92,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "Uac93e89a",
+          "notepad": "",
+          "targetUID": "Ua3ba1054",
+          "event": "e_Access_Main_Dashboard_Page_0.1",
+          "weight": 1,
+          "traverseTimes": 1,
+          "dataset": "Login",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 410.0,
+                "top": 500.0
+              },
+              {
+                "left": 435.0,
+                "top": 500.0
+              },
+              {
+                "left": 435.0,
+                "top": 379.0
+              },
+              {
+                "left": 1200.4,
+                "top": 379.0
+              },
+              {
+                "left": 1200.4,
+                "top": 404.0
+              }
+            ],
+            "label": {
+              "left": 64,
+              "top": -115,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U82319613",
+          "notepad": "",
+          "targetUID": "U7035bb88",
+          "event": "e_Access_Product_Details_Page_0.2",
+          "weight": 2,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "down",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 392.0,
+                "top": 514.0
+              },
+              {
+                "left": 392.0,
+                "top": 702.0
+              },
+              {
+                "left": 592.0,
+                "top": 702.0
+              },
+              {
+                "left": 592.0,
+                "top": 890.0
+              }
+            ],
+            "label": {
+              "left": -76,
+              "top": 61,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "Ua4f317fb",
+          "notepad": "",
+          "targetUID": "U17ad4b28",
+          "event": "e_Access_Register_Page_0.3",
+          "weight": 3,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 410.0,
+                "top": 452.0
+              },
+              {
+                "left": 673.4,
+                "top": 452.0
+              },
+              {
+                "left": 673.4,
+                "top": 599.0
+              }
+            ],
+            "label": {
+              "left": 4,
+              "top": -27,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 312.0,
+        "top": 440.0,
+        "width": 100.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "U9e436fe5",
+      "notepad": "",
+      "stateID": "v_Login_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "Uf722ec6d",
+          "notepad": "",
+          "targetUID": "Ua3ba1054",
+          "event": "e_Access_Main_Dashboard_Page_1.0",
+          "weight": 10,
+          "traverseTimes": 1,
+          "dataset": "Login",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 721.0,
+                "top": 270.0
+              },
+              {
+                "left": 1245.0,
+                "top": 270.0
+              },
+              {
+                "left": 1245.0,
+                "top": 404.0
+              }
+            ],
+            "label": {
+              "left": 12,
+              "top": -35,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 623.0,
+        "top": 232.0,
+        "width": 100.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "Ua3ba1054",
+      "notepad": "",
+      "stateID": "v_Main_Dashboard_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U2075e020",
+          "notepad": "",
+          "targetUID": "U2c326185",
+          "event": "e_Access_Dashboard_My_Transaction_Page_0.3",
+          "weight": 3,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "down",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 1245.0,
+                "top": 479.0
+              },
+              {
+                "left": 1245.0,
+                "top": 679.0
+              },
+              {
+                "left": 1245.0,
+                "top": 679.0
+              },
+              {
+                "left": 1245.0,
+                "top": 879.0
+              }
+            ],
+            "label": {
+              "left": -34,
+              "top": 16,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "Uc9488546",
+          "notepad": "",
+          "targetUID": "Uce91cf4b",
+          "event": "e_End_0.2",
+          "weight": 2,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 1323.0,
+                "top": 436.0
+              },
+              {
+                "left": 2205.8,
+                "top": 436.0
+              },
+              {
+                "left": 2205.8,
+                "top": 571.0
+              }
+            ],
+            "label": {
+              "left": 7,
+              "top": -24,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U530cf014",
+          "notepad": "",
+          "targetUID": "U1debba7b",
+          "event": "e_Return_Home_Page_0.5",
+          "weight": 5,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "left",
+            "endDir": "right",
+            "posList": [
+              {
+                "left": 1158.0,
+                "top": 434.0
+              },
+              {
+                "left": 784.0,
+                "top": 434.0
+              },
+              {
+                "left": 784.0,
+                "top": 475.0
+              },
+              {
+                "left": 410.0,
+                "top": 475.0
+              }
+            ],
+            "label": {
+              "left": -167,
+              "top": -47,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 1160.0,
+        "top": 405.0,
+        "width": 165.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "U7035bb88",
+      "notepad": "",
+      "stateID": "v_Product_Details_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U61d35aa4",
+          "notepad": "",
+          "targetUID": "Ud6fc7e0a",
+          "event": "e_Access_Cart_Page_0.4",
+          "weight": 4,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "down",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 586.0,
+                "top": 965.0
+              },
+              {
+                "left": 586.0,
+                "top": 1035.0
+              },
+              {
+                "left": 464.0,
+                "top": 1035.0
+              },
+              {
+                "left": 464.0,
+                "top": 1105.0
+              }
+            ],
+            "label": {
+              "left": 14,
+              "top": 5,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U93c8f287",
+          "notepad": "",
+          "targetUID": "U9e436fe5",
+          "event": "e_Access_Login_Page_0.2",
+          "weight": 2,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "left",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 504.0,
+                "top": 932.0
+              },
+              {
+                "left": 459.0,
+                "top": 932.0
+              },
+              {
+                "left": 459.0,
+                "top": 267.0
+              },
+              {
+                "left": 621.0,
+                "top": 267.0
+              }
+            ],
+            "label": {
+              "left": -139,
+              "top": -71,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U83d5ca75",
+          "notepad": "",
+          "targetUID": "Ua3ba1054",
+          "event": "e_Access_Main_Dashboard_Page_0.1",
+          "weight": 1,
+          "traverseTimes": 1,
+          "dataset": "Login",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "up",
+            "endDir": "down",
+            "posList": [
+              {
+                "left": 634.4,
+                "top": 890.0
+              },
+              {
+                "left": 634.4,
+                "top": 684.0
+              },
+              {
+                "left": 1203.4,
+                "top": 684.0
+              },
+              {
+                "left": 1203.4,
+                "top": 478.0
+              }
+            ],
+            "label": {
+              "left": 7,
+              "top": -29,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "Ufe8a3f68",
+          "notepad": "",
+          "targetUID": "U1debba7b",
+          "event": "e_Return_Home_Page_0.3",
+          "weight": 3,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "left",
+            "endDir": "down",
+            "posList": [
+              {
+                "left": 504.0,
+                "top": 946.0
+              },
+              {
+                "left": 353.0,
+                "top": 946.0
+              },
+              {
+                "left": 353.0,
+                "top": 514.0
+              }
+            ],
+            "label": {
+              "left": -190,
+              "top": 6,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 506.0,
+        "top": 891.0,
+        "width": 157.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "U17ad4b28",
+      "notepad": "",
+      "stateID": "v_Register_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "Uf568eb23",
+          "notepad": "",
+          "targetUID": "Ua3ba1054",
+          "event": "e_Access_Main_Dashboard_Page_1.0",
+          "weight": 10,
+          "traverseTimes": 1,
+          "dataset": "Register",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 725.0,
+                "top": 640.0
+              },
+              {
+                "left": 941.0,
+                "top": 640.0
+              },
+              {
+                "left": 941.0,
+                "top": 446.0
+              },
+              {
+                "left": 1158.0,
+                "top": 446.0
+              }
+            ],
+            "label": {
+              "left": 9,
+              "top": -28,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 615.0,
+        "top": 600.0,
+        "width": 112.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "U4741d6a6",
+      "notepad": "",
+      "stateID": "v_Show_My_Transaction_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U4530fd20",
+          "notepad": "",
+          "targetUID": "Uce91cf4b",
+          "event": "e_End_0.5",
+          "weight": 5,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "right",
+            "posList": [
+              {
+                "left": 1926.0,
+                "top": 917.0
+              },
+              {
+                "left": 2264.8,
+                "top": 917.0
+              },
+              {
+                "left": 2264.8,
+                "top": 592.0
+              },
+              {
+                "left": 2239.8,
+                "top": 592.0
+              }
+            ],
+            "label": {
+              "left": 11,
+              "top": -26,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U3f19065b",
+          "notepad": "",
+          "targetUID": "U2c326185",
+          "event": "e_Return_Dashboard_My_Transaction_Page_0.1",
+          "weight": 1,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "left",
+            "endDir": "right",
+            "posList": [
+              {
+                "left": 1723.0,
+                "top": 931.0
+              },
+              {
+                "left": 1542.0,
+                "top": 931.0
+              },
+              {
+                "left": 1542.0,
+                "top": 931.0
+              },
+              {
+                "left": 1361.0,
+                "top": 931.0
+              }
+            ],
+            "label": {
+              "left": -337,
+              "top": 7,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U6300ac30",
+          "notepad": "",
+          "targetUID": "Ua3ba1054",
+          "event": "e_Return_Main_Dashboard_Page_0.4",
+          "weight": 4,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "up",
+            "endDir": "down",
+            "posList": [
+              {
+                "left": 1831.2,
+                "top": 877.0
+              },
+              {
+                "left": 1831.2,
+                "top": 678.0
+              },
+              {
+                "left": 1285.0,
+                "top": 678.0
+              },
+              {
+                "left": 1285.0,
+                "top": 479.0
+              }
+            ],
+            "label": {
+              "left": 7,
+              "top": -36,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 1725.0,
+        "top": 878.0,
+        "width": 203.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    },
+    {
+      "readOnly": false,
+      "typeCode": "state",
+      "desc": "",
+      "uid": "U3874eb3d",
+      "notepad": "",
+      "stateID": "v_Success_Checkout_Page",
+      "isFinal": false,
+      "isInitial": false,
+      "nodeType": "STATE",
+      "color": "",
+      "textColor": "",
+      "stereotype": "",
+      "dataset": "",
+      "subModel": "",
+      "hideSubstates": false,
+      "maxMillis": 2147483647,
+      "activateType": "",
+      "activateThreshold": 1,
+      "firingType": "RANDOM",
+      "childrenStates": [],
+      "transitions": [
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U320e2979",
+          "notepad": "",
+          "targetUID": "Ua3ba1054",
+          "event": "e_Access_Main_Dashboard_Page_0.5",
+          "weight": 5,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "up",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 883.4,
+                "top": 1102.0
+              },
+              {
+                "left": 883.4,
+                "top": 422.0
+              },
+              {
+                "left": 1158.0,
+                "top": 422.0
+              }
+            ],
+            "label": {
+              "left": 7,
+              "top": -92,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U9cc7465a",
+          "notepad": "",
+          "targetUID": "Ud6fc7e0a",
+          "event": "e_Return_Cart_Page_0.1",
+          "weight": 1,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "down",
+            "endDir": "down",
+            "posList": [
+              {
+                "left": 886.4,
+                "top": 1177.0
+              },
+              {
+                "left": 886.4,
+                "top": 1204.0
+              },
+              {
+                "left": 488.4,
+                "top": 1204.0
+              },
+              {
+                "left": 488.4,
+                "top": 1179.0
+              }
+            ],
+            "label": {
+              "left": -155,
+              "top": 34,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U598f895a",
+          "notepad": "",
+          "targetUID": "U1debba7b",
+          "event": "e_Return_Home_Page_0.4",
+          "weight": 4,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "right",
+            "endDir": "up",
+            "posList": [
+              {
+                "left": 968.0,
+                "top": 1143.0
+              },
+              {
+                "left": 993.0,
+                "top": 1143.0
+              },
+              {
+                "left": 993.0,
+                "top": 414.0
+              },
+              {
+                "left": 358.4,
+                "top": 414.0
+              },
+              {
+                "left": 358.4,
+                "top": 439.0
+              }
+            ],
+            "label": {
+              "left": 5,
+              "top": 41,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        }
+      ],
+      "position": {
+        "left": 792.0,
+        "top": 1103.0,
+        "width": 178.0,
+        "height": 75.0
+      },
+      "css": {
+        "classes": "name-top"
+      }
+    }
+  ],
+  "modelName": "_sub_1.User Model",
+  "version": "1.0",
+  "versionAUT": "",
+  "versionTO": "6.0.28",
+  "versionReq": "",
+  "buildNum": 0,
+  "mbtNode": {
+    "uid": "U120",
+    "mode": "Priority",
+    "stopCond": {
+      "stopAtFinalOnly": true
+    },
+    "execThreadNum": 1,
+    "threadSpreadDelay": 0,
+    "seqParams": ""
+  },
+  "miscNode": {
+    "typeCode": "misc",
+    "canvasWidth": 3000,
+    "canvasHeight": 2000,
+    "maxTestCaseNum": 100,
+    "maxHistoryStat": 5,
+    "swimlanes": [],
+    "boxes": []
+  },
+  "pluginList": [
+    "SELENIUM"
+  ],
+  "modelType": "FSM"
+}

@@ -1,0 +1,52 @@
+{
+  "dsName": "Register",
+  "fieldList": [
+    {
+      "fieldName": "name",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "user"
+      ]
+    },
+    {
+      "fieldName": "email",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "user@gmail.com"
+      ]
+    },
+    {
+      "fieldName": "password",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "12345678"
+      ]
+    },
+    {
+      "fieldName": "confirm_password",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "12345678"
+      ]
+    }
+  ],
+  "overallStrength": "pairWise",
+  "dataRows": [
+    {
+      "selected": true,
+      "$$hashKey": "object:60",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "12345678",
+      "confirm_password": "12345678"
+    }
+  ]
+}

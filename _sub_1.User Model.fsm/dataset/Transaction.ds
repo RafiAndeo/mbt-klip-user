@@ -1,0 +1,62 @@
+{
+  "dsName": "Transaction",
+  "fieldList": [
+    {
+      "fieldName": "name",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "Rafi"
+      ]
+    },
+    {
+      "fieldName": "email",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "rafi@gmail.com"
+      ]
+    },
+    {
+      "fieldName": "address",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "Bandung"
+      ]
+    },
+    {
+      "fieldName": "phone",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "0"
+      ]
+    },
+    {
+      "fieldName": "size",
+      "dataType": "text",
+      "derived": false,
+      "groupCode": "",
+      "domainList": [
+        "L"
+      ]
+    }
+  ],
+  "overallStrength": "pairWise",
+  "dataRows": [
+    {
+      "selected": true,
+      "$$hashKey": "object:101",
+      "name": "Rafi",
+      "email": "rafi@gmail.com",
+      "address": "Bandung",
+      "phone": "0",
+      "size": "L"
+    }
+  ]
+}
