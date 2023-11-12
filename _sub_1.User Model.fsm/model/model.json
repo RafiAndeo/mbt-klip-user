@@ -227,7 +227,7 @@
           },
           "css": {},
           "stereotype": "",
-          "guard": "$VAR.HasAddProduct \u003d\u003d true",
+          "guard": "",
           "guardHint": "",
           "satisfyingHint": "",
           "maxMillis": 2147483647,
@@ -328,7 +328,7 @@
           "event": "e_Access_Show_My_Transaction_Page_0.5",
           "weight": 5,
           "traverseTimes": 1,
-          "dataset": "",
+          "dataset": "Login",
           "hideName": false,
           "posInfo": {
             "startDir": "right",
@@ -360,7 +360,7 @@
           },
           "css": {},
           "stereotype": "",
-          "guard": "$VAR.HasTransaction \u003d\u003d true || $VAR.HasLogin \u003d\u003d true",
+          "guard": "",
           "guardHint": "",
           "satisfyingHint": "",
           "maxMillis": 2147483647,
@@ -509,7 +509,7 @@
           "event": "e_Access_Cart_Page_0.1",
           "weight": 1,
           "traverseTimes": 1,
-          "dataset": "",
+          "dataset": "Login",
           "hideName": false,
           "posInfo": {
             "startDir": "down",
@@ -1073,8 +1073,8 @@
           "uid": "U93c8f287",
           "notepad": "",
           "targetUID": "U9e436fe5",
-          "event": "e_Access_Login_Page_0.2",
-          "weight": 2,
+          "event": "e_Access_Login_Page_0.1",
+          "weight": 1,
           "traverseTimes": 1,
           "dataset": "",
           "hideName": false,
@@ -1194,6 +1194,50 @@
             "label": {
               "left": -190,
               "top": 6,
+              "width": 75,
+              "height": 25
+            }
+          },
+          "css": {},
+          "stereotype": "",
+          "guard": "",
+          "guardHint": "",
+          "satisfyingHint": "",
+          "maxMillis": 2147483647,
+          "subModelFinalStateUID": ""
+        },
+        {
+          "readOnly": false,
+          "typeCode": "transition",
+          "desc": "",
+          "uid": "U0962fb3e",
+          "notepad": "",
+          "targetUID": "U17ad4b28",
+          "event": "e_Access_Register_Page_0.1",
+          "weight": 1,
+          "traverseTimes": 1,
+          "dataset": "",
+          "hideName": false,
+          "posInfo": {
+            "startDir": "up",
+            "endDir": "left",
+            "posList": [
+              {
+                "left": 536.0,
+                "top": 890.0
+              },
+              {
+                "left": 536.0,
+                "top": 631.0
+              },
+              {
+                "left": 613.0,
+                "top": 631.0
+              }
+            ],
+            "label": {
+              "left": 4,
+              "top": -56,
               "width": 75,
               "height": 25
             }
