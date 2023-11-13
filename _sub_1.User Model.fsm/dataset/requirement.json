@@ -1,0 +1,41 @@
+{
+  "updateDT": "Nov 13, 2023 12:17:31 PM",
+  "reqList": [
+    {
+      "name": "REQ_LOGIN",
+      "desc": "User Login",
+      "priority": "medium",
+      "reqID": ""
+    },
+    {
+      "name": "REQ_REGISTER",
+      "desc": "User Register",
+      "priority": "medium",
+      "reqID": ""
+    },
+    {
+      "name": "REQ_PRODUCT_DETAILS",
+      "desc": "Access Product Descriptions",
+      "priority": "low",
+      "reqID": ""
+    },
+    {
+      "name": "REQ_ADD_TO_CART",
+      "desc": "Add Products To Cart",
+      "priority": "low",
+      "reqID": ""
+    },
+    {
+      "name": "REQ_SUCCESS_TRANSACTIONS",
+      "desc": "Success Buy Products",
+      "priority": "high",
+      "reqID": ""
+    },
+    {
+      "name": "REQ_SHOW_TRANSACTIONS",
+      "desc": "User Show Transactions",
+      "priority": "medium",
+      "reqID": ""
+    }
+  ]
+}

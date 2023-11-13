@@ -85,6 +85,12 @@ def 'v_Login_Page: e_Access_Main_Dashboard_Page'() {
 	$SELENIUM.getWebDriver().findElement(By.id('password')).sendKeys(password);
 	$SELENIUM.getWebDriver().findElement(By.xpath("//button[@class='inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150 ml-3']")).click();
 	$VAR.HasLogin = true;
+
+	if ($SELENIUM.assist().containsText('Dashboard')) {
+		$SYS.addReqPassed('REQ_LOGIN', 'Successfully Perform User Login')
+	}else {
+		$SYS.addReqFailed('REQ_LOGIN', 'Failed Perform User Login')
+	}
 }
 
 
@@ -101,6 +107,12 @@ def 'v_Register_Page: e_Access_Main_Dashboard_Page'() {
 	$SELENIUM.getWebDriver().findElement(By.id('password_confirmation')).sendKeys(confirm_password);
 	$SELENIUM.getWebDriver().findElement(By.xpath("//button[@class='inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150 ml-4']")).click();
 	$VAR.HasRegister = true;
+
+	if ($SELENIUM.assist().containsText('Dashboard')) {
+		$SYS.addReqPassed('REQ_REGISTER', 'Successfully Perform User Register')
+	}else {
+		$SYS.addReqFailed('REQ_REGISTER', 'Failed Perform User Register')
+	}
 }
 
 
@@ -117,6 +129,12 @@ def 'v_Home_Page: e_Access_Product_Details_Page'() {
 	WebDriverWait wait = new WebDriverWait($SELENIUM.getWebDriver(), 5);
 	WebElement Product_Details_Element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='http://127.0.0.1:8000/details/seragam-merah-telkom-university' and contains(@class, 'stretched-link')]")));
 	Product_Details_Element.click();
+
+	if ($SELENIUM.assist().containsText('About the product')) {
+		$SYS.addReqPassed('REQ_PRODUCT_DETAILS', 'Successfully Open Product Details')
+	}else {
+		$SYS.addReqFailed('REQ_PRODUCT_DETAILS', 'Failed Open Product Details')
+	}
 }
 
 
@@ -125,6 +143,12 @@ def 'v_Product_Details_Page: e_Access_Cart_Page'() {
 	WebDriverWait wait = new WebDriverWait($SELENIUM.getWebDriver(), 5);
 	WebElement Cart_Element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit' and contains(@class, 'transition-all duration-200 bg-red-600 text-white focus:bg-black focus:text-red-600 rounded-full px-8 py-3 mt-4 inline-flex')]")));
 	Cart_Element.click();
+
+	if ($SELENIUM.assist().containsText('Ooops... Cart is empty Shop Now')) {
+		$SYS.addReqFailed('REQ_ADD_TO_CART', 'Failed Put Products to Cart')
+	}else {
+		$SYS.addReqPassed('REQ_ADD_TO_CART', 'Successfully Put Products to Cart')
+	}
 }
 
 
@@ -144,6 +168,12 @@ def 'v_Cart_Page: e_Access_Success_Checkout_Page'() {
 
 	$SELENIUM.getWebDriver().findElement(By.xpath("//input[@id='url']")).sendKeys("C:\\Users\\LENOVO\\Pictures\\aurora-borealis-9h.jpg");
 	$SELENIUM.getWebDriver().findElement(By.xpath("//button[@class='bg-red-600 text-white hover:bg-red-800 hover:text-white focus:outline-none w-full py-3 rounded-full text-lg focus:text-black transition-all duration-200 px-6']")).click();
+
+	if ($SELENIUM.assist().containsText('Success Checkout')) {
+		$SYS.addReqPassed('REQ_SUCCESS_TRANSACTIONS', 'Successfully Perform Transactions')
+	}else {
+		$SYS.addReqFailed('REQ_SUCCESS_TRANSACTIONS', 'Failed Perform Transactions')
+	}
 }
 
 
@@ -255,6 +285,12 @@ def 'v_Home_Page: e_Access_Main_Dashboard_Page'() {
 		$SELENIUM.getWebDriver().findElement(By.id('password')).sendKeys(password);
 		$SELENIUM.getWebDriver().findElement(By.xpath("//button[@class='inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150 ml-3']")).click();
 		$VAR.HasLogin = true;
+
+		if ($SELENIUM.assist().containsText('Dashboard')) {
+			$SYS.addReqPassed('REQ_LOGIN', 'Successfully Perform User Login')
+		}else {
+			$SYS.addReqFailed('REQ_LOGIN', 'Failed Perform User Login')
+		}
 	}
 }
 
@@ -290,6 +326,12 @@ def 'v_Product_Details_Page: e_Access_Main_Dashboard_Page'() {
 		$SELENIUM.getWebDriver().findElement(By.id('password')).sendKeys(password);
 		$SELENIUM.getWebDriver().findElement(By.xpath("//button[@class='inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150 ml-3']")).click();
 		$VAR.HasLogin = true;
+
+		if ($SELENIUM.assist().containsText('Dashboard')) {
+			$SYS.addReqPassed('REQ_LOGIN', 'Successfully Perform User Login')
+		}else {
+			$SYS.addReqFailed('REQ_LOGIN', 'Failed Perform User Login')
+		}
 	}
 }
 
@@ -366,6 +408,12 @@ def 'v_Dashboard_My_Transaction_Page: e_Access_Show_My_Transaction_Page'() {
 		WebDriverWait wait = new WebDriverWait($SELENIUM.getWebDriver(), 5);
 		WebElement Show_My_Transaction_Element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='http://127.0.0.1:8000/dashboard/my-transaction/1' and contains(@class, 'inline-block border border-green-700 bg-green-500 text-white rounded-md px-2 py-1 m-1 transition duration-500 ease select-none hover:bg-blue-800 focus:outline-none focus:shadow-outline')]")));
 		Show_My_Transaction_Element.click();
+
+		if ($SELENIUM.assist().containsText('Transaction Details')) {
+			$SYS.addReqPassed('REQ_SHOW_TRANSACTIONS', 'Successfully Show User Transactions')
+		}else {
+			$SYS.addReqFailed('REQ_SHOW_TRANSACTIONS', 'Failed Show User Transactions')
+		}
 	}else {
 		WebDriverWait wait = new WebDriverWait($SELENIUM.getWebDriver(), 5);
 		WebElement End_Element_1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out']")));
@@ -392,6 +440,12 @@ def 'v_Dashboard_My_Transaction_Page: e_Access_Show_My_Transaction_Page'() {
 
 		WebElement Show_My_Transaction_Element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='http://127.0.0.1:8000/dashboard/my-transaction/1' and contains(@class, 'inline-block border border-green-700 bg-green-500 text-white rounded-md px-2 py-1 m-1 transition duration-500 ease select-none hover:bg-blue-800 focus:outline-none focus:shadow-outline')]")));
 		Show_My_Transaction_Element.click();
+
+		if ($SELENIUM.assist().containsText('Transaction Details')) {
+			$SYS.addReqPassed('REQ_SHOW_TRANSACTIONS', 'Successfully Show User Transactions')
+		}else {
+			$SYS.addReqFailed('REQ_SHOW_TRANSACTIONS', 'Failed Show User Transactions')
+		}
 	}
 }
 

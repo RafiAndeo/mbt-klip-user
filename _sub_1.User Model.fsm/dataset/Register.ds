@@ -12,10 +12,7 @@
         "user3",
         "user4",
         "user5",
-        "user6",
-        "user7",
-        "user8",
-        "user9"
+        "user6"
       ]
     },
     {
@@ -29,10 +26,7 @@
         "user3@gmail.com",
         "user4@gmail.com",
         "user5@gmail.com",
-        "user6@gmail.com",
-        "user7@gmail.com",
-        "user8@gmail.com",
-        "user9@gmail.com"
+        "user6@gmail.com"
       ]
     },
     {
@@ -41,9 +35,6 @@
       "derived": false,
       "groupCode": "",
       "domainList": [
-        "12345678",
-        "12345678",
-        "12345678",
         "12345678",
         "12345678",
         "12345678",
@@ -58,9 +49,6 @@
       "derived": false,
       "groupCode": "",
       "domainList": [
-        "12345678",
-        "12345678",
-        "12345678",
         "12345678",
         "12345678",
         "12345678",
@@ -90,59 +78,35 @@
     },
     {
       "selected": false,
-      "$$hashKey": "object:70",
-      "password": "12345678",
-      "confirm_password": "12345678",
+      "$$hashKey": "object:104",
       "name": "user3",
-      "email": "user3@gmail.com"
+      "email": "user3@gmail.com",
+      "password": "12345678",
+      "confirm_password": "12345678"
     },
     {
       "selected": false,
-      "$$hashKey": "object:76",
-      "password": "12345678",
-      "confirm_password": "12345678",
+      "$$hashKey": "object:110",
       "name": "user4",
-      "email": "user4@gmail.com"
+      "email": "user4@gmail.com",
+      "password": "12345678",
+      "confirm_password": "12345678"
     },
     {
       "selected": false,
-      "$$hashKey": "object:82",
-      "password": "12345678",
-      "confirm_password": "12345678",
+      "$$hashKey": "object:116",
       "name": "user5",
-      "email": "user5@gmail.com"
-    },
-    {
-      "selected": false,
-      "$$hashKey": "object:88",
+      "email": "user5@gmail.com",
       "password": "12345678",
-      "confirm_password": "12345678",
-      "name": "user6",
-      "email": "user6@gmail.com"
-    },
-    {
-      "selected": false,
-      "$$hashKey": "object:94",
-      "password": "12345678",
-      "confirm_password": "12345678",
-      "name": "user7",
-      "email": "user7@gmail.com"
-    },
-    {
-      "selected": false,
-      "$$hashKey": "object:100",
-      "password": "12345678",
-      "confirm_password": "12345678",
-      "name": "user8",
-      "email": "user8@gmail.com"
+      "confirm_password": "12345678"
     },
     {
       "selected": true,
-      "$$hashKey": "object:106",
+      "$$hashKey": "object:122",
+      "name": "user6",
+      "email": "user6@gmail.com",
       "password": "12345678",
-      "confirm_password": "12345678",
-      "name": "user9",
-      "email": "user9@gmail.com"
+      "confirm_password": "12345678"
     }
   ]
 }
